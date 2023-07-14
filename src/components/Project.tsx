@@ -49,7 +49,13 @@ const Project = ({ projectName, projectImage, desc, liveLink, gitLink }: Props) 
                 }
             </section>
             <section className="links_wrapper">
-                <button onClick={ () => gotoLink(liveLink) }>Live länk</button>
+                {
+                    liveLink.length > 0 ?
+                    <button onClick={ () => gotoLink(liveLink) }>Live länk</button>
+                    :
+                    ''
+
+                }
                 <button onClick={ () => gotoGithub(gitLink) }>Github</button>
             </section>
         </div>

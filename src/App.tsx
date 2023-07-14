@@ -14,6 +14,7 @@ import rescueCover from './assets/rescueCover.jpg';
 import rewindCover from './assets/rewindCover.jpg';
 import morganCover from './assets/morgankjellinCover.png';
 import comboCover from './assets/comboCover.png';
+import portfolioCover from './assets/portfolioCover.png';
 import { useRef } from 'react';
 
 function App() {
@@ -179,6 +180,18 @@ function App() {
           ]} 
           liveLink={'https://morgankjellin.com/'} 
           gitLink={'https://github.com/Felix-Stark/morgan-kjellin'}
+          />
+
+          <Project projectName={'Portfolio'} projectImage={portfolioCover} 
+            desc={[
+              'Portfolion skapades i syfte att visa kreativitet och vilja, den kommer ständigt uppdateras med nya projekt.',
+              'Jag hoppas ni gillar det ni ser lika mycket som jag tyckte om att skapa det, man lär sig alltid något nytt längs vägen!',
+              'Designprocessen: figma skiss, användar tester',
+              'Tech-stack: React, Typescript, Sass'
+
+            ]} 
+            liveLink={''} 
+            gitLink={'https://github.com/RickyJohansson/portfolio'}
           />
 
           <Project projectName={'Rescue Rabbits'} projectImage={rescueCover} 
