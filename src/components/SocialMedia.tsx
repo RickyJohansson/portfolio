@@ -1,8 +1,8 @@
 import emailIcon from '../assets/emailicon.svg';
-import githubIcon from '../assets/githubicon.svg';
+import githubIcon from '../assets/githubIcon.svg';
 import linkedIcon from '../assets/linkedinicon.svg';
 import emailIconFooter from '../assets/emailiconFooter.svg';
-import githubIconFooter from '../assets/githubiconFooter.svg';
+import githubIconFooter from '../assets/githubIconFooter.svg';
 import linkedIconFooter from '../assets/linkediniconFooter.svg';
 
 
