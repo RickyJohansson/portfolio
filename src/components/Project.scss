@@ -1,0 +1,85 @@
+@import '../styles/variables';
+
+.project_container {
+
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $whiteText;
+
+    img {
+        scale: 80%;
+        border: 2px solid $blueBackground;
+        border-radius: .4rem;
+        box-shadow: 0 .6rem .5rem -.5rem $blueBackground;
+        z-index: 1;
+    }
+
+    h2, p {
+        margin-top: 1.5rem;
+        font-weight: 600;
+        color: $blueBackground;
+        z-index: 1;
+    }
+
+    h2 {
+        font-family: 'Barlow Condensed';
+        font-size: 30px;
+    }
+
+    p {
+        font-family: 'Montserrat';
+    }
+
+    .info_container {
+        width: 80%;
+        z-index: 1;
+
+        p {
+            margin-top: .5rem;
+        }
+    }
+
+    .links_wrapper {
+
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 5rem;
+        margin: auto 0 2rem 0;
+
+        button {
+
+            border: 2px solid $blueBackground;
+            border-radius: .4rem;
+            background-color: $beigeBackground;
+            font-family: 'Montserrat';
+            width: 6rem;
+            height: 3rem;
+            color: $primaryBlack;
+            font-weight: 600;
+            margin: 2rem 0;
+            box-shadow: 0 .6rem .5rem -.5rem $blueBackground;
+            transition: background-color .4s;
+            z-index: 1;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: $blueBackground;
+                color: $whiteText;
+
+            }
+
+        }
+
+    }
+
+}
+
+.project_container:nth-child(5), .project_container:nth-child(6)  {
+
+    margin-bottom: 11rem;
+
+}

@@ -1,0 +1,60 @@
+@import '../styles/variables';
+
+.social_media {
+
+    display: flex;
+    position: absolute;
+    top: 23rem;
+    right: 1.5rem;
+    z-index: 5;
+
+    .email, .github, .linkedin {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+      
+    }
+
+    .email_text {
+      text-align: center;
+    }
+
+    .githubIcon {
+      background-color: $whiteText;
+      width: 3rem;
+      padding-top: .4rem;
+      border-radius: .4rem;
+    }
+
+    .linkedIcon {
+      padding-top: .1rem;
+      margin-right: .1rem;
+      background-color: $whiteText;
+      width: 3.5rem;
+    }
+
+    .emailIcon {
+      background-color: $whiteText;
+      width: 3.8rem;
+    }
+
+    p, a {
+      font-family: 'Montserrat';
+      color: $greyblueText;
+      font-weight: 600;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: $whiteText;
+    }
+    
+  }

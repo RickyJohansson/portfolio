@@ -1,0 +1,47 @@
+@import '../styles/variables';
+
+.puzzle_wrapper {
+
+    position: absolute;
+    top: 0;
+    width: 12rem;
+    height: 6.5rem;
+    background-color: $primaryBackground;
+
+    .puzzle_square {
+
+        width: 12rem;
+        height: 3rem;
+        background-color: $primaryBlack;
+
+    }
+
+    .puzzle_top {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        background-color: transparent;
+        left: 4rem;
+
+        .puzzle_top__square {
+            position: absolute;
+            width: 2rem;
+            height: 1rem;
+            left: 1rem;
+            background-color: $primaryBlack;
+
+        }
+
+        .puzzle_circle__middle {
+            position: absolute;
+            width: 3rem;
+            height: 3rem;
+            left: .5rem;
+            background-color: $primaryBlack;
+            border-radius: 50%;
+
+        }
+
+    }
+
+}
