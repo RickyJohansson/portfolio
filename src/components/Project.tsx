@@ -36,7 +36,7 @@ const Project = ({ projectName, projectImage, desc, liveLink, gitLink }: Props) 
 
         <div className="project_container">
             <h2> { projectName } </h2>
-            <img src={ projectImage } alt={'project-image'} />
+            <img onClick={ () => gotoLink(liveLink) } src={ projectImage } alt={'project-image'} />
             <section className="info_container">
                 {
                     desc.map((text, i) => {
