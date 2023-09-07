@@ -7,14 +7,19 @@
     flex-direction: column;
     align-items: center;
     background-color: $whiteText;
-    max-width: 50rem;
+    max-width: 42rem;
+    box-shadow: 0 1.2rem .8rem -.8rem $secondaryBackground;
 
     img {
         scale: 80%;
         border: 2px solid $blueBackground;
         border-radius: .4rem;
-        box-shadow: 0 .6rem .5rem -.5rem $blueBackground;
+        box-shadow: 0 .7rem .5rem -.5rem $blueBackground;
         z-index: 1;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     h2, p {
