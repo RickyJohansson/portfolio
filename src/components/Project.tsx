@@ -7,10 +7,11 @@ type Props = {
     desc: string[];
     liveLink: string;
     gitLink: string;
+    figma: string;
 
 }
 
-const Project = ({ projectName, projectImage, desc, liveLink, gitLink }: Props) => {
+const Project = ({ projectName, projectImage, desc, liveLink, gitLink, figma }: Props) => {
 
     const gotoLink = (liveLink: string) => {
 
@@ -25,6 +26,16 @@ const Project = ({ projectName, projectImage, desc, liveLink, gitLink }: Props) 
     const gotoGithub = (gitLink: string) => {
         
         const newWindow = window.open(gitLink, '_blank', 'noopener,noreferrer');
+
+        if (newWindow) { 
+            newWindow.opener = null
+        }
+
+    }
+
+    const gotoFigma = (figma: string) => {
+
+        const newWindow = window.open(figma, '_blank', 'noopener,noreferrer');
 
         if (newWindow) { 
             newWindow.opener = null
@@ -57,6 +68,12 @@ const Project = ({ projectName, projectImage, desc, liveLink, gitLink }: Props) 
 
                 }
                 <button onClick={ () => gotoGithub(gitLink) }>Github</button>
+                {
+                    figma.length > 0 ?
+                    <button onClick={ () => gotoFigma(figma) }>Figma</button>
+                    :
+                    ''
+                }
             </section>
         </div>
 

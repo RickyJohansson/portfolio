@@ -141,6 +141,7 @@ function App() {
             ]} 
             liveLink={'https://combovault.com/'} 
             gitLink={'https://github.com/KarlEmilArvid/ComboVault'}
+            figma={'https://www.figma.com/file/yKd6UQBfT0mFDJZynvMowc/ComboVault?type=design&node-id=0%3A1&mode=design&t=AnAo888XuQdGbJ5z-1'}
           />
 
           <Project projectName={'Rocksalt'} projectImage={rocksaltCover} 
@@ -154,6 +155,7 @@ function App() {
           ]} 
           liveLink={'https://rocksalt.onrender.com/#/'} 
           gitLink={'https://github.com/RickyJohansson/mighty-zebras-fullstack'}
+          figma={'https://www.figma.com/file/lbwykP4131jRMf9EXopIdw/Mighty-Zebras?type=design&node-id=56-469&mode=design'}
           />
 
           <Project projectName={'Plugga IT'} projectImage={pluggaItCover} 
@@ -167,6 +169,7 @@ function App() {
             'Tech stack: React - TypeScript - SASS - AnimeJS - Firebase'
           ]} 
           liveLink={'https://plugga-it.se/'} gitLink={'https://github.com/RickyJohansson/folkans-it-utbildningar'}
+          figma={''}
           />
 
           <Project projectName={'Morgan Kjellin'} projectImage={morganCover} 
@@ -180,6 +183,7 @@ function App() {
           ]} 
           liveLink={'https://morgankjellin.com/'} 
           gitLink={'https://github.com/Felix-Stark/morgan-kjellin'}
+          figma={'https://www.figma.com/file/WRcjImiU6UKZK1ijk0iyyB/Morgan-Kjellin?type=design&node-id=1%3A2&mode=design&t=OIqdFUKCBWCNpBxn-1'}
           />
 
           <Project projectName={'Portfolio'} projectImage={portfolioCover} 
@@ -192,6 +196,7 @@ function App() {
             ]} 
             liveLink={''} 
             gitLink={'https://github.com/RickyJohansson/portfolio'}
+            figma={''}
           />
 
           <Project projectName={'Rescue Rabbits'} projectImage={rescueCover} 
@@ -203,6 +208,7 @@ function App() {
           ]} 
           liveLink={'https://rescue-rabbits.onrender.com/'} 
           gitLink={'https://github.com/RickyJohansson/rescue-rabbits'}
+          figma={'https://www.figma.com/file/dPiu6XGVasp1wwbECQYY4g/Rescue-Rabbits---by-Mighty-Gardeners?type=design&node-id=15%3A2&mode=design&t=xRD5mMww591t6rAj-1'}
           />
 
           <Project projectName={'Rewind'} projectImage={rewindCover} 
@@ -216,6 +222,7 @@ function App() {
           ]} 
           liveLink={'https://rewind-assignment.onrender.com/'} 
           gitLink={'https://github.com/RickyJohansson/rewind-assignment'}
+          figma={'https://www.figma.com/file/NwefOfxwtk177IIn0DtBMs/Rewind-Prototype?type=design&node-id=3%3A2&mode=design&t=xRD5mMww591t6rAj-1'}
           />
 
 
