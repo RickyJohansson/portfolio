@@ -364,13 +364,33 @@
 
     }
 
+    .experience_grid {
+      display: grid;
+      place-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      margin-bottom: 10rem;
+    }
+
+    .about_smaller {
+      text-align: center;
+      width: 320px;
+    }
+
     p:nth-child(7) {
-      margin-bottom: 14rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .about_experience {
+      margin: 6rem 3rem 1rem 3rem;
+      margin-bottom: 3rem;
+      font-size: 2rem;
+      color: $beigeBackground;
     }
 
     .puzzle_wrapper {
 
-      &:nth-child(8) {
+      &:nth-child(10) {
         top: auto;
         bottom: -.1rem;
         transform: rotate(180deg);
@@ -672,6 +692,7 @@
         display: none;
       }
     }
+    
   }
 
 }
@@ -718,10 +739,24 @@
       p {
         font-size: 20px;
       }
+
+      .about_experience {
+        font-size: 24px;
+      }
     }
 
   }
 
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    .about_section {
+      .experience_grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -752,6 +787,10 @@
       p {
         font-size: 18px;
         margin: 0 2rem 1rem 2rem;
+      }
+
+      .about_experience {
+        font-size: 20px;
       }
     }
 
@@ -796,6 +835,16 @@
 
 }
 
+@media screen and (max-width: 535px) {
+  .app {
+    .about_section {
+      .experience_grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 460px) {
 
   .app {
@@ -824,7 +873,7 @@
     }
 
     .about_section {
-      p {
+      p, .about_experience {
         font-size: 16px;
         margin: 0 1rem 1rem 1rem;
       }

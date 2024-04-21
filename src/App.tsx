@@ -7,6 +7,21 @@ import Underscore from './components/Underscore';
 import PuzzlePiece from './components/PuzzlePiece';
 import SocialMedia from './components/SocialMedia';
 import Project from './components/Project';
+import Experience from './components/Experience';
+
+import css from './assets/CSS.png';
+import express from './assets/Express.png';
+import javascript from './assets/Javascript.png';
+import typescript from './assets/Typescript.png';
+import node from './assets/Node.png';
+import git from './assets/Github.png';
+import firebase from './assets/Firebase.png';
+import figma from './assets/Figma.png';
+import html from './assets/HTML.png';
+import sass from './assets/Sass.png';
+import material from './assets/Material-ui.png';
+import react from './assets/React.png';
+
 import { useState } from 'react';
 import pluggaItCover from './assets/pluggaitCover.jpg';
 import rocksaltCover from './assets/rocksaltCover.jpg';
@@ -26,6 +41,21 @@ function App() {
   const aboutRef = useRef() as React.MutableRefObject<HTMLElement>;
   const portfolioRef = useRef() as React.MutableRefObject<HTMLElement>;
   const contactRef = useRef() as React.MutableRefObject<HTMLElement>;
+
+  const experiences = [
+    { prog: 'React', img: react },
+    { prog: 'Typescript', img: typescript },
+    { prog: 'Javascript', img: javascript },
+    { prog: 'Html', img: html },
+    { prog: 'Css', img: css },
+    { prog: 'Sass', img: sass },
+    { prog: 'Node', img: node },
+    { prog: 'Firebase', img: firebase },
+    { prog: 'Express', img: express },
+    { prog: 'Material-ui', img: material },
+    { prog: 'Git', img: git },
+    { prog: 'Figma', img: figma },
+  ];
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth'});
@@ -116,9 +146,18 @@ function App() {
         <Underscore />
         <p>Jag har studerat till Frontend utvecklare vid folkuniversitetet i Karlstad, vilket är en 2 år lång utbildning.</p>
         <p>Programmering har alltid varit något som intresserat mig sedan barnsben, nu var det dags att sätta igång den resan.</p>
-        <p>När utbildningen startade var jag överlycklig att äntligen få sätta igång och lära mig programmering på djupet, det var också inom just Frontend utveckling vilket intresserade mig.</p>
+        <p>När utbildningen startade var jag nöjd över att äntligen få sätta igång och lära mig programmering på djupet, det var också inom just Front-end utveckling vilket intresserade mig.</p>
         <p>Nu som nyexaminerad från yrkeshögskolan är jag mer än redo att starta min karriär!</p>
+        <p className="about_experience">Vilka tekniker har jag koll på?</p>
+        <section className="experience_grid">
+          {
+            experiences.map((obj) => {
+              return <Experience prog={obj.prog} img={obj.img} />
+            })
+          }
+        </section>
         <PuzzlePiece />
+
 
       </section>
 
