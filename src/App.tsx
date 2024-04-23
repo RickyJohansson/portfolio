@@ -65,6 +65,12 @@ function App() {
     setScrolled(`${window.scrollY}`);
   }
 
+  const scrollDown = () => {
+
+    aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+
+  }
+
   return (
     <div className="app">
 
@@ -136,6 +142,13 @@ function App() {
           </section>
 
         </div>
+
+        <figure className="profile_arrow_container">
+          <section className="profile_arrow" onClick={() => scrollDown()}>
+            <figure className="arrow_bottom"></figure>
+            <figure className="arrow_top"></figure>
+          </section>
+        </figure>
 
       </section>
 
