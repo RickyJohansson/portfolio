@@ -164,8 +164,8 @@ function App() {
         <p className="about_experience">Vilka tekniker har jag koll på?</p>
         <section className="experience_grid">
           {
-            experiences.map((obj) => {
-              return <Experience prog={obj.prog} img={obj.img} />
+            experiences.map((obj, i) => {
+              return <Experience key={i} prog={obj.prog} img={obj.img} />
             })
           }
         </section>
