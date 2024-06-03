@@ -84,8 +84,16 @@
 
 }
 
-.project_container:nth-child(7), .project_container:nth-child(8)  {
-
+.project_container:last-child  {
     margin-bottom: 11rem;
+}
 
+
+@media screen and (min-width: 1380px) {
+
+    .project_container:nth-child(7), .project_container:nth-child(8)  {
+    
+        margin-bottom: 11rem;
+    
+    }
 }
