@@ -310,6 +310,7 @@
     .profile_arrow_container {
 
       position: absolute;
+      visibility: visible;
       top: 52rem;
       width: 130px;
       height: 60px;
@@ -708,6 +709,9 @@
     
         }
 
+      }
+      .profile_arrow_container {
+        visibility: hidden;
       }
     }
   }
