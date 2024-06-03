@@ -30,6 +30,7 @@ import rewindCover from './assets/rewindCover.jpg';
 import morganCover from './assets/morgankjellinCover.png';
 import comboCover from './assets/comboCover.png';
 import portfolioCover from './assets/portfolioCover.png';
+import ellaCover from './assets/ellaCover.png';
 import { useRef } from 'react';
 
 function App() {
@@ -181,6 +182,20 @@ function App() {
         <Underscore />
 
         <section className="projects_wrapper">
+
+        <Project projectName={'Ellas klinik'} projectImage={ellaCover} 
+            desc={[
+              'Projekt för en personlig kund, varaktighet 2 veckor.',
+              'Målet var att åt kundens klinik skapa en simpel hemsida med fräsch design.',
+              'Behovet var att kunna se lite generell info om kliniken och att kunna se över tjänster och bokningar.',
+              'Huvudfokus för kunden var att kunna se tjänster för skönhetsvård, medicinsk fotvård samt hårvård.',
+              'Design processen: wireframes, användar tester.',
+              'Tech-stack: React - Typescript - Sass'
+            ]} 
+            liveLink={'https://ellasklinik.se/'} 
+            gitLink={'https://github.com/RickyJohansson/ellasklinik'}
+            figma={''}
+          />
 
           <Project projectName={'ComboVault'} projectImage={comboCover} 
             desc={[
