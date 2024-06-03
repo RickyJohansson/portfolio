@@ -584,6 +584,16 @@
 
 }
 
+@media screen and (min-width: 899px) and (max-width: 1380px) {
+  .app {
+    .portfolio_section {
+      .projects_wrapper {
+        place-items: center;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1380px) {
 
   .app {
