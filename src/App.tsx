@@ -185,7 +185,7 @@ function App() {
 
         <Project projectName={'Ellas klinik'} projectImage={ellaCover} 
             desc={[
-              'Projekt för en personlig kund, varaktighet 2 veckor.',
+              'Projekt för en personlig kund, fortsätter att utvecklas.',
               'Målet var att åt kundens klinik skapa en simpel hemsida med fräsch design.',
               'Behovet var att kunna se lite generell info om kliniken och att kunna se över tjänster och bokningar.',
               'Huvudfokus för kunden var att kunna se tjänster för skönhetsvård, medicinsk fotvård samt hårvård.',
